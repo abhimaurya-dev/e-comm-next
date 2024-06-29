@@ -6,6 +6,7 @@ import UserMenu from "./UserMenu";
 import { getCurrentUser } from "@ /actions/getCurrentUser";
 import Categories from "./Categories";
 import SearchBar from "../SearchBar";
+import { Suspense } from "react";
 
 const redressed = Redressed({ subsets: ["latin"], weight: ["400"] });
 
@@ -33,7 +34,9 @@ const NavBar = async () => {
           </div>
         </Container>
       </div>
-      <Categories />
+      <Suspense fallback={<>Loading...</>}>
+        <Categories />
+      </Suspense>
     </div>
   );
 };
