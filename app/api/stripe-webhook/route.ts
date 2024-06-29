@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 import prisma from "@ /libs/prismadb";
 import { headers } from "next/headers";
 
-export const config = {
+export const segmentConfig = {
   api: {
     bodyParser: false,
   },
