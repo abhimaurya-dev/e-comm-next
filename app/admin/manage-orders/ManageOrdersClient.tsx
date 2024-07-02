@@ -167,7 +167,6 @@ const ManageOrdersClient: React.FC<ManageOrdersClientProps> = ({ orders }) => {
       })
       .catch((err) => {
         toast.error("Oops! Something went wrong");
-        console.log(err);
       });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

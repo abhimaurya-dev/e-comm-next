@@ -74,7 +74,6 @@ const AddProductForm = () => {
   }, [isProductCreated]);
 
   const onSubmit: SubmitHandler<FieldValues> = async (data) => {
-    console.log("calling on submit");
     setIsLoading(true);
     let uploadedImages: UploadedImageType[] = [];
     if (!data.category) {

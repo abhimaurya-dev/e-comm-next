@@ -129,7 +129,6 @@ const ManageProductsClient: React.FC<ManageProductClientProps> = ({
       })
       .catch((err) => {
         toast.error("Oops! Something went wrong");
-        console.log(err);
       });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -142,7 +141,6 @@ const ManageProductsClient: React.FC<ManageProductClientProps> = ({
           if (item.image) {
             const imageRef = ref(storage, item.image);
             await deleteObject(imageRef);
-            console.log("image deleted", item.image);
           }
         }
       } catch (error) {

@@ -36,7 +36,9 @@ const Footer = () => {
               and greatest devices and accessories to our customers. With a wide
               selection of phones, TVs, laptops, watches, and accessories.
             </p>
-            <p>&copy; {new Date().getFullYear()} E-shop. All rights reserved</p>
+            <p>
+              &copy; {new Date().getFullYear()} Ecom-ease. All rights reserved
+            </p>
           </div>
           <FooterList>
             <h3 className="text-base font-bold mb-2">Follow Us</h3>

@@ -8,7 +8,6 @@ import MenuItem from "./MenuItem";
 import { signOut } from "next-auth/react";
 import BackDrop from "./BackDrop";
 import { SafeUser } from "@ /types";
-
 interface UserMenuProps {
   currentUser: SafeUser | null;
 }
@@ -42,9 +41,9 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
                 </Link>
                 <hr />
                 <MenuItem
-                  onclick={() => {
+                  onclick={async () => {
                     toggleOpen();
-                    signOut();
+                    signOut({ redirect: true, callbackUrl: "/" });
                   }}
                 >
                   Logout

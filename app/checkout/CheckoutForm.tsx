@@ -52,7 +52,6 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({
         redirect: "if_required",
       })
       .then((result) => {
-        console.log(result);
         if (!result.error) {
           toast.success("Checkout Success");
           handleClearCart();

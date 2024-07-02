@@ -41,7 +41,7 @@ const SearchBar = () => {
         {...register("searchTerm")}
         autoComplete="off"
         type="text"
-        placeholder="Explore E-shop"
+        placeholder="Explore Ecom-ease"
         className="p-2 border border-gray-300 rounded-1-md focus:outline-none focus:border-[0.5px] focus:border-slate-500 w-80"
       />
       <button
